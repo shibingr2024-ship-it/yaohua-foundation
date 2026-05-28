@@ -257,22 +257,50 @@ export default function YaohuaFoundationWebsite() {
               </div>
             </article>
 
-            <div className="space-y-4">
-              {[
-                ["2012", "无偿捐赠个人全部财产，设立少儿艺术发展基金。"],
-                ["2013", "天津瑶华青少年艺术活动中心正式成立。"],
-                ["2019", "天津市瑶华公益基金会正式成立。"],
-              ].map(([year, text]) => (
-                <article
-                  key={year}
-                  className="rounded-3xl border border-green-100 bg-white p-6 shadow-sm"
-                >
-                  <div className="mb-3 text-4xl font-bold text-[#1F7A4D]">
-                    {year}
-                  </div>
-                  <p className="leading-8 text-slate-700">{text}</p>
-                </article>
-              ))}
+            <div className="space-y-6">
+              <figure className="overflow-hidden rounded-[2rem] bg-[#123D2B] shadow-sm">
+                <div className="relative h-64">
+                  <Image
+                    src="/zhong-yaohua.jpg"
+                    alt="钟瑶华先生"
+                    fill
+                    sizes="(min-width: 1024px) 420px, 100vw"
+                    className="object-cover object-center"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#123D2B]/85 via-transparent to-transparent" />
+                </div>
+                <figcaption className="px-6 pb-6 pt-4 text-white">
+                  <p className="text-xl font-semibold">钟瑶华先生</p>
+                  <p className="mt-2 leading-7 text-white/70">
+                    以一生热忱关注公益与教育，让善意成为长久延续的力量。
+                  </p>
+                </figcaption>
+              </figure>
+
+              <div className="relative rounded-[2rem] border border-green-100 bg-white p-6 shadow-sm">
+                <div className="absolute bottom-8 left-[3.05rem] top-8 w-px bg-green-100" />
+                {[
+                  ["2012", "无偿捐赠个人全部财产，设立少儿艺术发展基金。"],
+                  ["2013", "天津瑶华青少年艺术活动中心正式成立。"],
+                  ["2019", "天津市瑶华公益基金会正式成立。"],
+                ].map(([year, text]) => (
+                  <article key={year} className="relative flex gap-5 pb-6 last:pb-0">
+                    <div className="relative z-10 flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#1F7A4D] text-sm font-bold text-white shadow-sm">
+                      {year}
+                    </div>
+                    <p className="pt-2 leading-8 text-slate-700">{text}</p>
+                  </article>
+                ))}
+              </div>
+
+              <div className="rounded-[2rem] bg-green-50 p-6">
+                <div className="text-sm font-semibold text-[#1F7A4D]">
+                  公益传承
+                </div>
+                <p className="mt-3 leading-8 text-slate-700">
+                  从个人善举到公益平台，瑶华精神在持续的教育行动中被看见、被传递。
+                </p>
+              </div>
             </div>
           </div>
         </div>
