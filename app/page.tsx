@@ -47,6 +47,14 @@ const news = [
   ["2026-05-08", "国际教育与公益融合发展项目进入筹备阶段"],
 ];
 
+const heroImages = [
+  "/hero/yaohua_upscaled_1.jpg",
+  "/hero/yaohua_upscaled_2.jpg",
+  "/hero/yaohua_upscaled_3.jpg",
+  "/hero/yaohua_upscaled_4.jpg",
+  "/hero/yaohua_upscaled_5.jpg",
+];
+
 function LogoMark({ footer = false }: { footer?: boolean }) {
   return (
     <Image
@@ -96,7 +104,32 @@ export default function YaohuaFoundationWebsite() {
         id="home"
         className="relative flex h-[760px] items-center overflow-hidden pt-20"
       >
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?q=80&w=1800&auto=format&fit=crop')] bg-cover bg-center" />
+        <div className="absolute inset-0">
+          {heroImages.map((src, index) => (
+            <motion.div
+              key={src}
+              className="absolute inset-0"
+              initial={{ opacity: index === 0 ? 1 : 0 }}
+              animate={{ opacity: [0, 1, 1, 0] }}
+              transition={{
+                duration: 25,
+                repeat: Infinity,
+                delay: index * 5,
+                times: [0, 0.04, 0.18, 0.22],
+                ease: "easeInOut",
+              }}
+            >
+              <Image
+                src={src}
+                alt=""
+                fill
+                priority={index === 0}
+                sizes="100vw"
+                className="object-cover object-center"
+              />
+            </motion.div>
+          ))}
+        </div>
         <div className="absolute inset-0 bg-gradient-to-r from-[#0F3D2C]/90 via-[#1F7A4D]/65 to-transparent" />
 
         <div className="relative mx-auto w-full max-w-7xl px-5">
@@ -137,6 +170,27 @@ export default function YaohuaFoundationWebsite() {
               </a>
             </div>
           </motion.div>
+        </div>
+
+        <div className="absolute bottom-10 left-1/2 z-10 flex -translate-x-1/2 gap-3">
+          {heroImages.map((src, index) => (
+            <motion.span
+              key={src}
+              className="h-2.5 w-2.5 rounded-full bg-white"
+              initial={{ opacity: index === 0 ? 1 : 0.35, scale: index === 0 ? 1.25 : 1 }}
+              animate={{
+                opacity: [0.35, 1, 1, 0.35],
+                scale: [1, 1.25, 1.25, 1],
+              }}
+              transition={{
+                duration: 25,
+                repeat: Infinity,
+                delay: index * 5,
+                times: [0, 0.04, 0.18, 0.22],
+                ease: "easeInOut",
+              }}
+            />
+          ))}
         </div>
       </section>
 
