@@ -150,7 +150,7 @@ export default function YaohuaFoundationWebsite() {
               连接教育与世界
             </h1>
 
-            <p className="mb-9 text-xl leading-relaxed text-white/90 md:text-2xl">
+            <p className="mb-9 text-xl leading-relaxed text-white/90 indent-[2em] md:text-2xl">
               天津市瑶华公益基金会致力于推动青少年教育、国际文化交流与公益事业发展。
             </p>
 
@@ -214,7 +214,7 @@ export default function YaohuaFoundationWebsite() {
               <HeartHandshake className="h-6 w-6" />
             </div>
             <h3 className="mb-3 text-xl font-bold">{title}</h3>
-            <p className="leading-relaxed text-slate-600">{text}</p>
+            <p className="leading-relaxed text-slate-600 indent-[2em]">{text}</p>
           </div>
         ))}
       </section>
@@ -224,7 +224,7 @@ export default function YaohuaFoundationWebsite() {
           <div className="mb-12 max-w-3xl">
             <div className="mb-3 font-semibold text-[#1F7A4D]">Yaohua Story</div>
             <h2 className="mb-6 text-4xl font-bold md:text-5xl">瑶华故事</h2>
-            <p className="text-xl leading-9 text-slate-700">
+            <p className="text-xl leading-9 text-slate-700 indent-[2em]">
               “瑶华”，源于一个名字，更源于一份跨越岁月的大爱。
             </p>
           </div>
@@ -232,26 +232,26 @@ export default function YaohuaFoundationWebsite() {
           <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_420px]">
             <article className="rounded-[2rem] bg-[#F7FAF6] p-8 md:p-10">
               <div className="space-y-6 text-lg leading-9 text-slate-700">
-                <p>
+                <p className="indent-[2em]">
                   钟瑶华先生，中共党员、著名社会活动家、慈善家，一生热心公益，始终关注青少年成长与教育事业发展。她始终相信，教育不仅能够改变个人命运，更能够点亮一个家庭、一个地区，乃至一个时代的未来。
                 </p>
-                <p>
+                <p className="indent-[2em]">
                   2012年，钟瑶华先生将个人名下全部财产共计160万元人民币无偿捐赠。其中，100万元用于家乡希望小学建设，其余资金用于设立“钟瑶华少儿艺术发展基金”，持续支持青少年艺术教育与公益事业发展。
                 </p>
-                <p>
+                <p className="indent-[2em]">
                   在她爱心精神的感召下，2013年，“天津瑶华青少年艺术活动中心”正式成立。多年来，中心始终秉承公益初心，积极为青少年创造良好的学习环境和优质教育资源，累计服务大量青少年群体，逐渐成为天津市青少年艺术教育的重要公益阵地。
                 </p>
-                <p>
+                <p className="indent-[2em]">
                   为了更好地传承钟瑶华先生无私奉献的精神，2019年，在社会各界爱心人士共同努力下，“天津市瑶华公益基金会”正式成立。
                 </p>
-                <p>
+                <p className="indent-[2em]">
                   从一份个人善举，到一个长期公益平台；从帮助一个孩子，到关注更多青少年的成长与未来，“瑶华”已经不仅仅是一个名字，更成为一种温暖而坚定的公益精神。
                 </p>
               </div>
 
               <div className="mt-9 rounded-3xl bg-[#123D2B] p-7 text-white">
                 <p className="mb-3 text-2xl font-semibold">大爱无疆，教育兴邦。</p>
-                <p className="leading-8 text-white/75">
+                <p className="leading-8 text-white/75 indent-[2em]">
                   瑶华公益基金会将继续秉承初心，以教育公益为根基，以社会责任为使命，携手更多爱心人士与机构，共同守护孩子们的梦想与未来。
                 </p>
               </div>
@@ -271,7 +271,7 @@ export default function YaohuaFoundationWebsite() {
                 </div>
                 <figcaption className="px-6 pb-6 pt-4 text-white">
                   <p className="text-xl font-semibold">钟瑶华先生</p>
-                  <p className="mt-2 leading-7 text-white/70">
+                  <p className="mt-2 leading-7 text-white/70 indent-[2em]">
                     以一生热忱关注公益与教育，让善意成为长久延续的力量。
                   </p>
                 </figcaption>
@@ -288,7 +288,7 @@ export default function YaohuaFoundationWebsite() {
                     <div className="relative z-10 flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#1F7A4D] text-sm font-bold text-white shadow-sm">
                       {year}
                     </div>
-                    <p className="pt-2 leading-8 text-slate-700">{text}</p>
+                    <p className="pt-2 leading-8 text-slate-700 indent-[2em]">{text}</p>
                   </article>
                 ))}
               </div>
@@ -297,7 +297,7 @@ export default function YaohuaFoundationWebsite() {
                 <div className="text-sm font-semibold text-[#1F7A4D]">
                   公益传承
                 </div>
-                <p className="mt-3 leading-8 text-slate-700">
+                <p className="mt-3 leading-8 text-slate-700 indent-[2em]">
                   从个人善举到公益平台，瑶华精神在持续的教育行动中被看见、被传递。
                 </p>
               </div>
@@ -364,7 +364,7 @@ export default function YaohuaFoundationWebsite() {
                   {project.icon}
                 </div>
                 <h3 className="mb-4 text-2xl font-bold">{project.title}</h3>
-                <p className="leading-8 text-white/75">{project.text}</p>
+                <p className="leading-8 text-white/75 indent-[2em]">{project.text}</p>
               </div>
             ))}
           </div>
@@ -408,7 +408,7 @@ export default function YaohuaFoundationWebsite() {
                 </div>
               </div>
             </div>
-            <p className="leading-8 text-white/65">
+            <p className="leading-8 text-white/65 indent-[2em]">
               致力于推动青少年教育、国际文化交流与公益事业发展。
             </p>
           </div>
