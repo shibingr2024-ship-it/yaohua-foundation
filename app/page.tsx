@@ -184,8 +184,35 @@ export default function YaohuaFoundationWebsite() {
         </div>
 
         <div className="grid grid-cols-2 gap-5">
-          <div className="h-72 rounded-[2rem] bg-[url('https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=900&auto=format&fit=crop')] bg-cover bg-center shadow-md" />
-          <div className="mt-12 h-72 rounded-[2rem] bg-[url('https://images.unsplash.com/photo-1544717305-2782549b5136?q=80&w=900&auto=format&fit=crop')] bg-cover bg-center shadow-md" />
+          <figure>
+            <div className="relative h-72 overflow-hidden rounded-[2rem] bg-white shadow-md">
+              <Image
+                src="/zhong-yaohua.jpg"
+                alt="钟瑶华先生"
+                fill
+                sizes="(min-width: 1024px) 280px, 50vw"
+                className="object-cover object-center"
+              />
+            </div>
+            <figcaption className="mt-3 text-center text-sm font-medium text-slate-600">
+              钟瑶华先生
+            </figcaption>
+          </figure>
+
+          <figure className="mt-12">
+            <div className="relative h-72 overflow-hidden rounded-[2rem] bg-white shadow-md">
+              <Image
+                src="/young-yaohua.jpg"
+                alt="青年时期瑶华先生"
+                fill
+                sizes="(min-width: 1024px) 280px, 50vw"
+                className="object-cover object-center"
+              />
+            </div>
+            <figcaption className="mt-3 text-center text-sm font-medium text-slate-600">
+              青年时期瑶华先生
+            </figcaption>
+          </figure>
         </div>
       </section>
 
