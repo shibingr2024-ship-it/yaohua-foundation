@@ -165,102 +165,98 @@ export default function YaohuaFoundationWebsite() {
         ))}
       </section>
 
-      <section id="story" className="mx-auto max-w-7xl px-5 py-28">
-        <div className="grid gap-12 lg:grid-cols-[1.15fr_0.85fr] lg:items-start">
-          <div>
+      <section id="story" className="bg-white py-28">
+        <div className="mx-auto max-w-7xl px-5">
+          <div className="mb-12 max-w-3xl">
             <div className="mb-3 font-semibold text-[#1F7A4D]">Yaohua Story</div>
-            <h2 className="mb-7 text-4xl font-bold md:text-5xl">瑶华故事</h2>
-            <div className="space-y-6 text-lg leading-9 text-slate-700">
-              <p>“瑶华”，源于一个名字，更源于一份跨越岁月的大爱。</p>
-              <p>
-                钟瑶华先生，中共党员、著名社会活动家、慈善家，一生热心公益，始终关注青少年成长与教育事业发展。她始终相信，教育不仅能够改变个人命运，更能够点亮一个家庭、一个地区，乃至一个时代的未来。
-              </p>
-              <p>
-                在她爱心精神的感召下，“瑶华”从一份个人善举，逐渐成长为一个长期公益平台；从帮助一个孩子，到关注更多青少年的成长与未来，已经不仅仅是一个名字，更成为一种温暖而坚定的公益精神。
-              </p>
-              <p className="text-2xl font-semibold text-[#1F7A4D]">
-                大爱无疆，教育兴邦。
-              </p>
-              <p>
-                瑶华公益基金会将继续秉承初心，以教育公益为根基，以社会责任为使命，携手更多爱心人士与机构，共同守护孩子们的梦想与未来。
-              </p>
-            </div>
+            <h2 className="mb-6 text-4xl font-bold md:text-5xl">瑶华故事</h2>
+            <p className="text-xl leading-9 text-slate-700">
+              “瑶华”，源于一个名字，更源于一份跨越岁月的大爱。
+            </p>
           </div>
 
-          <div className="space-y-4">
-            {[
-              [
-                "2012",
-                "钟瑶华先生将个人名下全部财产共计160万元人民币无偿捐赠。其中，100万元用于家乡希望小学建设，其余资金用于设立“钟瑶华少儿艺术发展基金”，持续支持青少年艺术教育与公益事业发展。",
-              ],
-              [
-                "2013",
-                "“天津瑶华青少年艺术活动中心”正式成立。多年来，中心始终秉承公益初心，积极为青少年创造良好的学习环境和优质教育资源，累计服务大量青少年群体，逐渐成为天津市青少年艺术教育的重要公益阵地。",
-              ],
-              [
-                "2019",
-                "为了更好地传承钟瑶华先生无私奉献的精神，在社会各界爱心人士共同努力下，“天津市瑶华公益基金会”正式成立。",
-              ],
-            ].map(([year, text]) => (
-              <article
-                key={year}
-                className="rounded-3xl border border-green-100 bg-white p-6 shadow-sm"
-              >
-                <div className="mb-3 text-3xl font-bold text-[#1F7A4D]">
-                  {year}
-                </div>
-                <p className="leading-8 text-slate-700">{text}</p>
-              </article>
-            ))}
+          <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_420px]">
+            <article className="rounded-[2rem] bg-[#F7FAF6] p-8 md:p-10">
+              <div className="space-y-6 text-lg leading-9 text-slate-700">
+                <p>
+                  钟瑶华先生，中共党员、著名社会活动家、慈善家，一生热心公益，始终关注青少年成长与教育事业发展。她始终相信，教育不仅能够改变个人命运，更能够点亮一个家庭、一个地区，乃至一个时代的未来。
+                </p>
+                <p>
+                  2012年，钟瑶华先生将个人名下全部财产共计160万元人民币无偿捐赠。其中，100万元用于家乡希望小学建设，其余资金用于设立“钟瑶华少儿艺术发展基金”，持续支持青少年艺术教育与公益事业发展。
+                </p>
+                <p>
+                  在她爱心精神的感召下，2013年，“天津瑶华青少年艺术活动中心”正式成立。多年来，中心始终秉承公益初心，积极为青少年创造良好的学习环境和优质教育资源，累计服务大量青少年群体，逐渐成为天津市青少年艺术教育的重要公益阵地。
+                </p>
+                <p>
+                  为了更好地传承钟瑶华先生无私奉献的精神，2019年，在社会各界爱心人士共同努力下，“天津市瑶华公益基金会”正式成立。
+                </p>
+                <p>
+                  从一份个人善举，到一个长期公益平台；从帮助一个孩子，到关注更多青少年的成长与未来，“瑶华”已经不仅仅是一个名字，更成为一种温暖而坚定的公益精神。
+                </p>
+              </div>
+
+              <div className="mt-9 rounded-3xl bg-[#123D2B] p-7 text-white">
+                <p className="mb-3 text-2xl font-semibold">大爱无疆，教育兴邦。</p>
+                <p className="leading-8 text-white/75">
+                  瑶华公益基金会将继续秉承初心，以教育公益为根基，以社会责任为使命，携手更多爱心人士与机构，共同守护孩子们的梦想与未来。
+                </p>
+              </div>
+            </article>
+
+            <div className="space-y-4">
+              {[
+                ["2012", "无偿捐赠个人全部财产，设立少儿艺术发展基金。"],
+                ["2013", "天津瑶华青少年艺术活动中心正式成立。"],
+                ["2019", "天津市瑶华公益基金会正式成立。"],
+              ].map(([year, text]) => (
+                <article
+                  key={year}
+                  className="rounded-3xl border border-green-100 bg-white p-6 shadow-sm"
+                >
+                  <div className="mb-3 text-4xl font-bold text-[#1F7A4D]">
+                    {year}
+                  </div>
+                  <p className="leading-8 text-slate-700">{text}</p>
+                </article>
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
-      <section
-        id="about"
-        className="mx-auto grid max-w-7xl items-center gap-14 px-5 py-28 lg:grid-cols-2"
-      >
-        <div>
-          <div className="mb-3 font-semibold text-[#1F7A4D]">About Yaohua</div>
-          <h2 className="mb-6 text-4xl font-bold md:text-5xl">关于瑶华</h2>
-          <p className="mb-5 text-lg leading-9 text-slate-700">
-            天津市瑶华公益基金会是经天津市民政主管部门依法批准成立的公益慈善组织。
-          </p>
-          <p className="mb-7 text-lg leading-9 text-slate-700">
-            基金会持续关注青少年成长、艺术教育、国际文化交流与教育公益合作，积极推动教育资源共享与国际交流平台建设。
-          </p>
-          <a href="#contact" className="inline-flex rounded-full bg-[#1F7A4D] px-6 py-3 text-white">
-            了解基金会
-          </a>
+      <section className="mx-auto max-w-7xl px-5 py-24">
+        <div className="mb-10">
+          <div className="mb-3 font-semibold text-[#1F7A4D]">Yaohua Moments</div>
+          <h2 className="text-4xl font-bold md:text-5xl">瑶华影像</h2>
         </div>
 
-        <div className="grid grid-cols-2 gap-5">
+        <div className="grid gap-6 md:grid-cols-2">
           <figure>
-            <div className="relative h-72 overflow-hidden rounded-[2rem] bg-white shadow-md">
+            <div className="relative h-80 overflow-hidden rounded-[2rem] bg-white shadow-md md:h-96">
               <Image
                 src="/zhong-yaohua.jpg"
                 alt="钟瑶华先生"
                 fill
-                sizes="(min-width: 1024px) 280px, 50vw"
+                sizes="(min-width: 768px) 50vw, 100vw"
                 className="object-cover object-center"
               />
             </div>
-            <figcaption className="mt-3 text-center text-sm font-medium text-slate-600">
+            <figcaption className="mt-4 text-center text-base font-medium text-slate-600">
               钟瑶华先生
             </figcaption>
           </figure>
 
-          <figure className="mt-12">
-            <div className="relative h-72 overflow-hidden rounded-[2rem] bg-white shadow-md">
+          <figure>
+            <div className="relative h-80 overflow-hidden rounded-[2rem] bg-white shadow-md md:h-96">
               <Image
                 src="/young-yaohua.jpg"
                 alt="青年时期瑶华先生"
                 fill
-                sizes="(min-width: 1024px) 280px, 50vw"
+                sizes="(min-width: 768px) 50vw, 100vw"
                 className="object-cover object-center"
               />
             </div>
-            <figcaption className="mt-3 text-center text-sm font-medium text-slate-600">
+            <figcaption className="mt-4 text-center text-base font-medium text-slate-600">
               青年时期瑶华先生
             </figcaption>
           </figure>
